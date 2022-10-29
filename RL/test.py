@@ -9,11 +9,6 @@ import os
 import numpy as np
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 from stable_baselines3.common.env_util import make_vec_env
-import gym
-import os
-import gym_examples
-import numpy as np
-from  stable_baselines3 import PPO
 
 
 if __name__ == "__main__":
@@ -38,7 +33,7 @@ if __name__ == "__main__":
 
     # Load model
     logger.info("Loading model...")
-    save_dir = "/tmp/gym/"
+    save_dir = "/home/ayb/rl-example/DeepLearning/RL/gym_examples/models/"
     if args["algo"] == 'PPO':
         model = PPO.load(save_dir + args["model_name"])
     else:
