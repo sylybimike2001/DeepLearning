@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     # Load model
     logger.info("Loading model...")
-    save_dir = "/home/ayb/rl-example/DeepLearning/RL/gym_examples/models/"
+    save_dir = "/home/ayb/rl-example/DeepLearning/RL/models/"
     if args["algo"] == 'PPO':
         model = PPO.load(save_dir + args["model_name"])
     else:

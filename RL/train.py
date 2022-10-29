@@ -44,7 +44,7 @@ if __name__ == "__main__":
     logger.info("Finished Training after " + str(args["time_steps"]) + " time steps!")
 
     # Create save dir
-    save_dir = "/home/ayb/rl-example/DeepLearning/RL/gym_examples/models/"
+    save_dir = "/home/ayb/rl-example/DeepLearning/RL/models/"
     model_name = args["save_name"]
     os.makedirs(save_dir, exist_ok=True)
     model.save(save_dir + model_name)
